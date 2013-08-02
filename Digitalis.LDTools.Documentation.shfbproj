@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3d5b8cfd-c758-4201-b93c-99c7a82e2f86}</ProjectGuid>
+    <SHFBSchemaVersion>1.9.5.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Digitalis.LDTools.Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>Digitalis_LDTools</HtmlHelpName>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="..\Digitalis.LDTools.Controls\Digitalis.LDTools.Controls.csproj" />
+      <DocumentationSource sourceFile="..\Digitalis.LDTools.DOM\Digitalis.LDTools.DOM.csproj" />
+    </DocumentationSources>
+    <BinaryTOC>True</BinaryTOC>
+    <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="Digitalis.LDTools.Controls.OpenGL" isDocumented="True">Provides classes to render LDraw files using OpenGL.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Digitalis.LDTools.DOM" isDocumented="True">Provides classes to create and manipulate LDraw files.
+
+&lt;p&gt;
+The DOM has full support for &lt;see cref="T:Digitalis.UndoSystem.UndoStack"/&gt;: all settable properties are implemented via &lt;see cref="T:Digitalis.UndoSystem.UndoableProperty"/&gt; and &lt;see cref="T:Digitalis.LDTools.DOM.ElementCollection"/&gt; and &lt;see cref="T:Digitalis.LDTools.DOM.LDDocument"/&gt; are built around &lt;see cref="T:Digitalis.UndoSystem.UndoableList"/&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+If the &lt;see cref="N:Digitalis.LDTools.Controls"/&gt; DLL is present in the same folder as the DOM DLL, the concrete subclasses of &lt;see cref="T:Digitalis.LDTools.DOM.LDElement"/&gt; support &lt;see cref="M:Digitalis.LDTools.DOM.LDElement.GetEditor"/&gt;.
+&lt;/p&gt;</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Digitalis.LDTools.Library" isDocumented="True">Provides classes to manage an LDraw parts-library.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Digitalis.LDTools.Controls" isDocumented="True">Provides UI classes for use with the DOM.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Digitalis.LDTools.DOM.Analytics" isDocumented="True">Provides types to describe issues found with DOM elements, and possible fixes for those issues.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Digitalis.LDTools.DOM.API" isDocumented="True">Defines the basic API for the DOM.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Digitalis.LDTools.DOM.API.Analytics" isDocumented="True">Provides types to describe issues found with DOM elements, and possible fixes for those issues.</NamespaceSummaryItem>
+    </NamespaceSummaries>
+    <HelpTitle>Digitalis.LDTools</HelpTitle>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <ProjectSummary>
+    </ProjectSummary>
+    <PresentationStyle>VS2010</PresentationStyle>
+    <ApiFilter>
+      <Filter entryType="Namespace" fullName="Digitalis.LDTools.DOM" isExposed="True">
+        <Filter entryType="Class" fullName="Digitalis.LDTools.DOM.LDrawElement" filterName="LDrawElement" isExposed="True">
+          <Filter entryType="Method" fullName="Digitalis.LDTools.DOM.LDrawElement.FireElementTreeEvent" filterName="FireElementTreeEvent" isExposed="False" />
+        </Filter>
+        <Filter entryType="Class" fullName="Digitalis.LDTools.DOM.LDrawElementCollection" filterName="LDrawElementCollection" isExposed="True">
+          <Filter entryType="Method" fullName="Digitalis.LDTools.DOM.LDrawElementCollection.FireElementTreeEvent" filterName="FireElementTreeEvent" isExposed="False" />
+        </Filter>
+      </Filter>
+    </ApiFilter>
+    <ComponentConfigurations />
+    <HelpAttributes />
+    <PlugInConfigurations />
+    <BuildLogFile />
+    <HtmlHelp1xCompilerPath />
+    <HtmlHelp2xCompilerPath />
+    <SandcastlePath />
+    <WorkingPath />
+    <BuildAssemblerVerbosity>AllMessages</BuildAssemblerVerbosity>
+    <HelpFileFormat>MSHelpViewer</HelpFileFormat>
+    <IndentHtml>False</IndentHtml>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <CleanIntermediates>True</CleanIntermediates>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <Language>en-US</Language>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected</VisibleItems>
+    <RootNamespaceTitle>Digitalis.LDTools</RootNamespaceTitle>
+    <TocParentId>-1</TocParentId>
+    <TocParentVersion>100</TocParentVersion>
+    <TopicVersion>100</TopicVersion>
+    <TocOrder>-1</TocOrder>
+    <SelfBranded>True</SelfBranded>
+    <MSHelpViewerSdkLinkType>Id</MSHelpViewerSdkLinkType>
+    <CatalogVersion>100</CatalogVersion>
+    <CatalogProductId>VS</CatalogProductId>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter, AutoDocumentDispose</MissingTags>
+    <CatalogName>VisualStudio11</CatalogName>
+  </PropertyGroup>
+  <!-- There are no properties for these groups.  AnyCPU needs to appear in
+       order for Visual Studio to perform the build.  The others are optional
+       common platform types that may appear. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
+  </PropertyGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>
